@@ -1,0 +1,96 @@
+.product__card {
+  .select {
+    height: fit-content;
+    margin: 0.4em 0.2em;
+    margin-bottom: 0;
+    padding: 0.5em;
+    background: var(--white-color);
+    border-radius: .5em;
+    font-size: 1.6rem;
+    transition: 0.5s;
+    box-shadow: inset 0 0 5px var(--black-color);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &__colors {
+    grid-row: 4;
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    padding-bottom: 2em;
+    text-transform: capitalize;
+    z-index: 1;
+
+    .select {
+      min-width: 50px;
+      text-align: center;
+    }
+  }
+
+  &__sizes {
+    grid-row: 5;
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .c-white {
+    color: var(--white-color);
+  }
+
+  .bg-third {
+    background: var(--third-color);
+  }
+
+  .bg-fourth {
+    background: var(--fourth-color);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .product {
+    &__card {
+      &__colors {
+        grid-row: 4;
+        grid-column: 2;
+      }
+
+      &__sizes {
+        grid-row: 5;
+        grid-column: 2;
+      }
+
+      .select {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .product__card {
+    .select {
+      &:hover {
+        box-shadow: 0 0 4px #000;
+        background: var(--fourth-color) linear-gradient(to top,
+            rgba(51, 51, 51, 0.3),
+            rgba(255, 255, 255, 0.3));
+        color: var(--white-color);
+      }
+    }
+    &__colors {
+      .select {
+        &:hover {
+          box-shadow: 0 0 4px #000;
+          background-color: var(--third-color);
+        }
+      }
+    }
+  }
+}

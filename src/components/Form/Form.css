@@ -1,0 +1,241 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 3em;
+  background: rgba(245, 245, 245, 0.7) linear-gradient(to top, rgba(51, 51, 51, 0.3), rgba(255, 255, 255, 0.2));
+  border-radius: 3em;
+}
+form h3 {
+  color: var(--fourth-color);
+  font-size: 2rem;
+  text-align: center;
+}
+form fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em;
+  border: 3px solid var(--fourth-color);
+  border-radius: 0.5em;
+  color: var(--black-color);
+  font-size: 2.5rem;
+}
+form fieldset input {
+  width: 100%;
+  height: 100%;
+  padding: 0.1em 0.2em;
+  border-color: transparent;
+  border-radius: 0.3em;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+}
+form fieldset .password-input {
+  position: relative;
+}
+form fieldset .password-input .info {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: none;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+form fieldset .password-input .info ul {
+  padding: 0.5em;
+  font-weight: normal;
+  list-style: none;
+}
+form fieldset .icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 0.1em;
+  color: var(--fourth-color);
+  z-index: 3;
+}
+form label {
+  flex-direction: row;
+  margin-left: 1.5em;
+  color: var(--black-color);
+  font-size: 2.2rem;
+}
+form label span {
+  margin-right: 0.5em;
+}
+form label input {
+  accent-color: var(--fourth-color);
+  border-radius: 1em;
+  transform: scale(1.5);
+}
+form .next-btn {
+  margin: 2em 0 0 auto;
+}
+form .next-btn button {
+  padding: 0.5em 1.5em;
+  background: var(--third-color) linear-gradient(to top, rgba(51, 51, 51, 0.205), rgba(51, 51, 51, 0.2) 40%, rgba(255, 255, 255, 0.2));
+  border: 0 solid transparent;
+  border-radius: 1em;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  text-transform: capitalize;
+  box-shadow: 1px 1px 5px var(--black-color);
+}
+form .error-info {
+  padding: 0.5em;
+  background-color: var(--white-color);
+  border-radius: 1em;
+  color: red;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.signup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  padding-top: 5em;
+  background: var(--white-color);
+  color: var(--black-color);
+  overflow: hidden;
+}
+.signup h2 {
+  position: relative;
+  margin: 50px 0;
+  margin-top: 0;
+  color: var(--fourth-color);
+  font-size: 3.5em;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 5;
+}
+.signup h2::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  background: var(--white-color);
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+  transform: translateY(35%);
+  z-index: -1;
+}
+.signup form {
+  position: relative;
+  width: inherit;
+  min-height: 400px;
+  margin: 0 2em;
+  padding: 0;
+  padding-top: 3em;
+  background: var(--white-color);
+}
+.signup form .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+}
+.signup form .tabs span {
+  padding: 0.4em 0.8em;
+  border: 0 solid transparent;
+  border-radius: 0.75em;
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 1s;
+  box-shadow: 0 1px 4px var(--fourth-color);
+  cursor: pointer;
+}
+.signup form .tabs .tabs-active {
+  background: linear-gradient(to top, rgba(51, 51, 51, 0.205), rgba(255, 255, 255, 0.205));
+  box-shadow: 0 4px 7px var(--fourth-color);
+}
+.signup form .tab {
+  display: none;
+  margin-top: 3em;
+}
+.signup form .tab fieldset {
+  margin: 0.8em 1.6em;
+  background: var(--white-color) linear-gradient(to top, rgba(51, 51, 51, 0.199), rgba(255, 255, 255, 0.199));
+  border: 2px solid var(--third-color);
+  border-radius: 1em;
+  color: var(--fourth-color);
+  font-size: 2rem;
+}
+.signup form .tab fieldset input {
+  width: calc(100% - 1em);
+  height: 100%;
+  margin: 0 0.5em;
+  margin-bottom: 0.3em;
+  padding: 0.1em 0.2em;
+  border-color: transparent;
+  border-radius: 0.3em;
+  font-size: 1.7rem;
+  font-weight: normal;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+}
+.signup form .tab small {
+  display: block;
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: overline;
+}
+.signup form .tab .next-btn {
+  position: absolute;
+  right: 4em;
+}
+.signup form .Sign {
+  margin-bottom: 9em;
+}
+.signup form .tab-active {
+  display: block !important;
+}
+
+.other-sign {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+  width: calc(100% - 2em);
+  max-width: 450px;
+  padding: 1em;
+  background: var(--white-color) linear-gradient(to top, rgba(51, 51, 51, 0.199), rgba(255, 255, 255, 0.199));
+  border: 2px solid var(--third-color);
+  border-radius: 1em;
+  color: var(--black-color);
+  font-size: 2.5rem;
+  text-align: center;
+  opacity: 0.9;
+}
+.other-sign legend {
+  text-align: left;
+  padding: 0 0.25em;
+}
+.other-sign img {
+  width: 55px;
+  height: 50px;
+}
+
+@media (min-width: 576px) {
+  .signup {
+    margin-top: 10em;
+  }
+}/*# sourceMappingURL=Form.css.map */

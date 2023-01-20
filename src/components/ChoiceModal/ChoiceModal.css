@@ -1,0 +1,44 @@
+.cart-modal {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  padding: 2em;
+  background: var(--white-color) linear-gradient(to top, rgba(51, 51, 51, 0.2), rgba(255, 255, 255, 0.2));
+  border-radius: 2.5em;
+  color: var(--black-color);
+  text-align: center;
+  box-shadow: 1px 1px 3px var(--black-color);
+}
+.cart-modal::after {
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  right: -1.5em;
+  bottom: -1.5em;
+  content: "sdfsdfsdfsd";
+  background: inherit;
+  border-radius: 2em;
+  filter: drop-shadow(2px 2px 5px var(--black-color));
+  z-index: -1;
+}
+.cart-modal h2 {
+  font-size: 2.2rem;
+}
+.cart-modal button, .cart-modal .link {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border: 0 solid transparent;
+  border-radius: 0.8em;
+  color: var(--black-color);
+  font-size: 2.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 7px var(--fourth-color);
+}
+.cart-modal button {
+  background: var(--fourth-color) linear-gradient(to top, rgba(51, 51, 51, 0.4), rgba(255, 255, 255, 0.2));
+}
+.cart-modal .link {
+  background: var(--second-color) linear-gradient(to top, rgba(51, 51, 51, 0.4), rgba(255, 255, 255, 0.2));
+}/*# sourceMappingURL=ChoiceModal.css.map */

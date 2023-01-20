@@ -1,0 +1,40 @@
+.notification {
+  position: absolute;
+  bottom: -1em;
+  left: 25%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2em;
+  background: rgba(255, 255, 255, 0.1) linear-gradient(to top, rgba(51, 51, 51, 0.2), rgba(255, 255, 255, 0.2));
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px var(--fourth-color);
+
+  &__value {
+    font-size: 2rem;
+  }
+
+  &__icon {
+    color: var(--fourth-color);
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .notification {
+    bottom: -20%;
+    left: 25%;
+    color: rgba(251, 251, 251, 0.5);
+    box-shadow: 0 0 5px var(--white-color);
+    
+    &__value {
+      font-size: 1.5rem;
+    }
+    
+    &__icon {
+      font-size: 1rem;
+      color: rgba(251, 251, 251, 0.5);
+    }
+  }
+}

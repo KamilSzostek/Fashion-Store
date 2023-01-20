@@ -1,0 +1,20 @@
+.promo {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(to right,
+      #7DA5A7,
+      #A4C0C1,
+      #E0EAEB,
+      #E0EAEB,
+      #A4C0C1,
+      #7DA5A7,
+    );
+  overflow: hidden;
+}
+
+@media (min-width: 768px){
+  .promo{
+    padding-top: 0;
+  }
+}

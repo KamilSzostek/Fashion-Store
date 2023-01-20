@@ -1,0 +1,13 @@
+.fa-heart {
+  margin-right: 0.5em;
+  color: var(--white-color);
+  filter: drop-shadow(0 0 1px var(--fourth-color))
+    drop-shadow(0 0 1px var(--fourth-color));
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.fav {
+  color: var(--fourth-color);
+  filter: none;
+}

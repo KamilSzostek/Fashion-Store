@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  width: 100vw;
+  height: 575px;
+  padding: 15px 0;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  overflow: hidden;
+}
+.modal::-webkit-backdrop {
+  -webkit-backdrop-filter: blur(4px) brightness(90%);
+          backdrop-filter: blur(4px) brightness(90%);
+}
+.modal::backdrop {
+  -webkit-backdrop-filter: blur(4px) brightness(90%);
+          backdrop-filter: blur(4px) brightness(90%);
+}/*# sourceMappingURL=Modal.css.map */

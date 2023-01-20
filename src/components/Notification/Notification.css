@@ -1,0 +1,35 @@
+.notification {
+  position: absolute;
+  bottom: -1em;
+  right: -0.75em;
+  padding: 0.5em 0.3em;
+  background: rgba(255, 255, 255, 0.1) linear-gradient(to top, rgba(51, 51, 51, 0.2), rgba(255, 255, 255, 0.2));
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px var(--fourth-color);
+}
+.notification__value {
+  font-size: 2rem;
+}
+.notification__icon {
+  color: var(--fourth-color);
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .notification {
+    bottom: 0;
+    right: -0.2em;
+    box-shadow: 0 0 5px var(--white-color);
+    filter: drop-shadow(0 0 5px var(--white-color));
+  }
+  .notification__value {
+    font-size: 1.7rem;
+    color: var(--white-color);
+  }
+  .notification__icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=Notification.css.map */

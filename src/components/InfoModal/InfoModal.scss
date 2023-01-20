@@ -1,0 +1,51 @@
+.info-modal {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    padding: 1em 2em;
+    background: var(--white-color) 
+    linear-gradient(
+        to top,
+        rgba(51, 51, 51, 0.2),
+        rgba(255, 255, 255, 0.2)
+    );
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
+    color: var(--black-color);
+    text-align: center;
+    box-shadow: 1px 1px 3px var(--black-color);
+    h2 {
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+
+    button, .link {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        padding: .5em 3em;
+        background: var(--fourth-color) 
+        linear-gradient(
+            to top,
+            rgba(51, 51, 51, 0.4),
+            rgba(255, 255, 255, 0.2)
+        );
+        border: 0 solid transparent;
+        border-radius: .8em;
+        color: var(--white-color);
+        font-size: 2.2rem;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        box-shadow: 0 0 7px var(--fourth-color);
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+            background-color: var(--first-color);
+            color: var(--black-color);
+        }
+    }
+}
