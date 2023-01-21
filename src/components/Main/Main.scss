@@ -6,6 +6,7 @@
   flex-direction: column;
   width: 100vw;
   min-height: calc(100vh - 100px);
+  height: fit-content;
   transition: filter 0.5s;
 
   .start-link {

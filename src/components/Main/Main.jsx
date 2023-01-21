@@ -8,7 +8,6 @@ import ShopPromo from "../../pages/ShopPromo/ShopPromo";
 import Collection from "../../pages/Collection/Collection";
 import Product from "../../pages/Product/Product";
 import Cart from "../../pages/Cart/Cart";
-import Footer from "../Footer/Footer";
 import "./Main.scss";
 
 export let refreshMain
@@ -34,7 +33,6 @@ const Main = () => {
             <Route path="/shop/product/:id" element={<Product />} />
           </Routes>
         </AnimatePresence>
-        <Footer />
       </main>
   );
 };

@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
+import {StoreContext} from '../../store/StoreProvider';
 import SelectBox from "./subcomponents/SelectBox";
 import "./Filters.scss";
 
-const Filters = ({ products, setProducts, handleReset }) => {
+const Filters = ({ setProducts, handleReset }) => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(100);
   const [color, setColor] = useState("");
@@ -10,6 +11,8 @@ const Filters = ({ products, setProducts, handleReset }) => {
   const [sizes, setSizes] = useState(null);
   const sizes1 = ["s", "m", "l", "xl", "xxl"];
   const sizes2 = [];
+
+  const { collectionHer, collectionHim } = useContext(StoreContext);
 
   const selectCategoryRef = useRef(null);
 
@@ -34,19 +37,20 @@ const Filters = ({ products, setProducts, handleReset }) => {
   const handleFilter = () => {
     let filteredProducts = [];
     const { current: selectCategory } = selectCategoryRef;
+  
     if (selectCategory.value !== "") {
-      filteredProducts = [...products].filter(
+      filteredProducts = [...collectionHer, ...collectionHim].filter(
         (item) => item.category === selectCategory.value
       );
-      filteredProducts = [...filteredProducts].filter(
-        (item) => item.price < maxPrice && item.price > minPrice
+      filteredProducts = filteredProducts.filter(
+        (item) => (item.price*0.9 <= maxPrice) && (item.price*0.9 >= minPrice)
       );
       if (size !== "")
-        filteredProducts = [...filteredProducts].filter((item) =>
+        filteredProducts = filteredProducts.filter((item) =>
           item.sizes.includes(size)
         );
       if (color !== "")
-        filteredProducts = [...filteredProducts].filter((item) =>
+        filteredProducts = filteredProducts.filter((item) =>
           item.colors.includes(color)
         );
     }

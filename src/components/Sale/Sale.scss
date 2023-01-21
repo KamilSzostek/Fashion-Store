@@ -131,7 +131,7 @@
         background-size: cover;
         transition: transform 1s;
         transform: scaleY(0.5) scaleX(1.5) translateX(-200%);
-        animation: drive-in 1s 0.5s linear forwards;
+        animation: drive-in 1s 1.5s linear forwards;
         z-index: -1;
       }
     }
@@ -147,7 +147,7 @@
           rgba(51, 51, 51, 0.322) 30%,
           rgba(255, 255, 255, 0.212));
       opacity: 0;
-      animation: opacity-8 0.5s 1.5s linear forwards;
+      animation: opacity-8 0.5s 2s linear forwards;
     }
 
     img {

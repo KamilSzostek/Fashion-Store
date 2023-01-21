@@ -149,6 +149,26 @@
           text-align: center;
           text-decoration: overline;
         }
+
+        .postal{
+          display: none;
+          padding-bottom: .2em;
+        }
+
+        .postal-mobile{
+          margin-left: 2em;
+          width: 50%;
+          height: 10px;
+          padding-bottom: 1.3em;
+          &__container{
+            display: flex;
+            height: 25px;
+
+            input:nth-child(1){
+              flex-shrink: 2;
+            }
+          }
+        }
       }
 
       .tab-active {
@@ -161,7 +181,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .signup {
     justify-content: center;
     align-items: center;
@@ -210,6 +230,14 @@
                   rgba(255, 255, 255, 0.205));
               box-shadow: 0 4px 7px var(--fourth-color);
             }
+          }
+        }
+        .tab{
+          .postal{
+            display: block;
+          }
+          .postal-mobile{
+            display: none;
           }
         }
       }

@@ -69,7 +69,12 @@
         flex-grow: 5;
         .container {
           gap: 30px;
-          flex-direction: column;
+          margin-inline: 1em;
+          overflow-x: scroll;
+
+          .card{
+            scroll-snap-type: mandatory;
+          }
         }
       }
     }
@@ -90,26 +95,29 @@
 @media (min-width: 768px) {
   .fashion-collection {
     min-height: calc(100vh - 65px);
-    height: 120vh;
-    margin-top: 70px;
+    height: fit-content;
+    margin-top: 60px;
     padding-top: 0;
     
     &__left {
       display: block;
+      height: 100vh;
     }
     
     main {
       width: 80vw;
-      height: 100%;
+      height: fit-content;
       
       .category-box {
-        flex-grow: 1; 
-        height: 70%;
+        height: fit-content;
         main { 
-          overflow-y: scroll;
-          overflow-x: hidden;
+          height: fit-content;
+          overflow-y: hidden;
           .container {
+            height: fit-content;
             flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
           }
         }
       }
@@ -118,11 +126,35 @@
 }
 @media (min-width: 992px) {
   .fashion-collection { 
+    position: relative;
+    transform: scale(1);
+    justify-content: center;
+    &__left{
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
     &__right {
+      position: sticky;
+      top: 0;
+      right: 0;
+      height: 100vh;
       display: block;
     } 
     main {
       width: 60vw;
+      height: fit-content;
+      overflow-x: hidden;
+      .category-box {
+        main { 
+          overflow-y: scroll;
+          .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow-x: hidden;
+          }
+        }
+      }
 
     }
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import Logo from '../../utility/images/logo2.png'
 import Facebook from '../../utility/images/facebook.png'
 import Twitter from '../../utility/images/twitter.png'
@@ -10,15 +10,15 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import './Footer.scss'
 
 const Footer = () => {
-    const location = useLocation();
+    // const location = useLocation();
     const currentYear = (new Date().getFullYear())
 
     const scrollTopHandler = () => {
         window.scrollTo(0, 0);
-        if (location.pathname === '/shop/collection') {
-            const container = document.body.querySelector('.fashion-collection main .category-box main');
-            container.scrollTo(0, 0);
-        }
+        // if (location.pathname === '/shop/collection') {
+        //     const container = document.body.querySelector('.fashion-collection main .category-box main');
+        //     container.scrollTo(0, 0);
+        // }
     }
 
     return (

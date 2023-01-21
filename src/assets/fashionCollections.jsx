@@ -46,7 +46,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["s", "m", "l", "xl", "xxl"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'tshirts',
         isBest: true,
         isNew: true
@@ -63,7 +63,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["xl", "xxl"],
-        colors: ["grey", "red"],
+        colors: ["gray", "red"],
         category: 'hoodies',
         isBest: true,
         isNew: true
@@ -80,7 +80,7 @@ export const collectionHer = [
             { id: 3, name: "coat", img: coat2 },
         ],
         sizes: ["s", "m", "l", "xl"],
-        colors: ["black", "white", "brown", "grey"],
+        colors: ["black", "white", "brown", "gray"],
         category: 'tshirts',
         isBest: true,
         isNew: true
@@ -114,7 +114,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["s", "m", "l", "xl", "xxl"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -131,7 +131,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["xl", "xxl"],
-        colors: ["grey", "red"],
+        colors: ["gray", "red"],
         category: 'hoodies',
         isBest: false,
         isNew: false
@@ -148,7 +148,7 @@ export const collectionHer = [
             { id: 3, name: "coat", img: coat2 },
         ],
         sizes: ["s", "m", "l", "xl"],
-        colors: ["black", "white", "brown", "grey"],
+        colors: ["black", "white", "brown", "gray"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -182,7 +182,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["s", "m", "l", "xl", "xxl"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -199,7 +199,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["xl", "xxl"],
-        colors: ["grey", "red"],
+        colors: ["gray", "red"],
         category: 'hoodies',
         isBest: false,
         isNew: false
@@ -216,7 +216,7 @@ export const collectionHer = [
             { id: 3, name: "coat", img: coat2 },
         ],
         sizes: ["s", "m", "l", "xl"],
-        colors: ["black", "white", "brown", "grey"],
+        colors: ["black", "white", "brown", "gray"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -250,7 +250,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["s", "m", "l", "xl", "xxl"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -267,7 +267,7 @@ export const collectionHer = [
             { id: 3, name: "Tshirt", img: femaleTshirt2 },
         ],
         sizes: ["xl", "xxl"],
-        colors: ["grey", "red"],
+        colors: ["gray", "red"],
         category: 'hoodies',
         isBest: false,
         isNew: false
@@ -284,7 +284,7 @@ export const collectionHer = [
             { id: 3, name: "coat", img: coat2 },
         ],
         sizes: ["s", "m", "l", "xl"],
-        colors: ["black", "white", "brown", "grey"],
+        colors: ["black", "white", "brown", "gray"],
         category: 'tshirts',
         isBest: false,
         isNew: false
@@ -304,7 +304,7 @@ export const collectionHim = [
             { id: 3, name: "tshirt", img: tshirt2 },
         ],
         sizes: ["s", "xl", "xxl"],
-        colors: ["black", "brown", "grey"],
+        colors: ["black", "brown", "gray"],
         category: 'jackets',
         isBest: true,
         isNew: true
@@ -338,7 +338,7 @@ export const collectionHim = [
             { id: 3, name: "tshirt", img: tshirt2 },
         ],
         sizes: ["36", "38", "42", "44", "45"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'trousers',
         isBest: true,
         isNew: true
@@ -355,7 +355,7 @@ export const collectionHim = [
             { id: 3, name: "jacket", img: jacket2 },
         ],
         sizes: ["s", "m", "l", "xl", "xxl"],
-        colors: ["black", "white", "brown", "grey", "red"],
+        colors: ["black", "white", "brown", "gray", "red"],
         category: 'tshirt',
         isBest: true,
         isNew: true

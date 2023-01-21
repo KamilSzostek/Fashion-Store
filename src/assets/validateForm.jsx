@@ -46,6 +46,15 @@ export const validateForm = (id) => {
           minLength = 6;
           if (postalValidation(minLength, input, error)) return false;
           break;
+        // case "postal-mobile":
+        //   const length = 2;
+        //   const length2 = 3;
+        //   const input2 = input.nextElementSibling;
+        //   if (postalValidation(length, input, error)) return false;
+        //   if (postalValidation(length2, input2, error)) return false;
+        //   if (postalValidation(length, input, error)) return false;
+        //   if (postalValidation(length2, input2, error)) return false;
+        //   break;
         case "password":
           minLength = 6;
           if (minLengthValidation(minLength, title, input, error)) return false;

@@ -45,7 +45,6 @@
         rgba(255, 255, 255, 0.5));
 
     &__title {
-      // width: 25%;
       position: relative;
       background-image: url('../../utility/images/regular/whish.jpeg');
       background-position: center;
@@ -65,7 +64,6 @@
       h2 {
         position: absolute;
         top: 50%;
-        // right: 0;
         text-transform: capitalize;
         transform: translate(32%, -100%);
         font-size: 5rem;
@@ -84,20 +82,17 @@
     &__container {
       flex-grow: 2;
       margin-left: 2em;
-      // height: 100%;
-      overflow: visible;
+      height: 400px;
       background: transparent;
       filter: brightness(100%);
-
+      
       &__cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding-block: 1em;
-        padding-inline: 15%;
-        width: 100%;
+        justify-content: start;
+        gap: 30px;
+        margin: 0;
+        width: auto;
         height: 80%;
-        overflow-y: scroll;
+        overflow-x: scroll;
 
         &::before {
           display: none;
@@ -108,8 +103,10 @@
         }
 
         .link {
-          width: 100%;
-          max-width: 250px;
+          scroll-snap-type: mandatory;
+          min-width: 250px;
+          height: 250px;
+          margin-inline: 2em;
           border-radius: 1em;
           box-shadow: 0 0 4px var(--black-color);
           transition: .5s;
@@ -185,11 +182,15 @@
     .regular {
       &__title {
         width: 25%;
+        margin-right: 4em;
 
         h2 {
           right: 10%;
 
         }
+      }
+      &__promo{
+        width: 25%;
       }
     }
   }
@@ -202,6 +203,15 @@
         h2 {
           right: 0;
 
+        }
+      }
+      &__container{
+        &__cards{
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-top: 1em;
+          overflow-x:hidden;
+          overflow-y: scroll;
         }
       }
     }
