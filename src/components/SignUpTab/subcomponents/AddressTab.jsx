@@ -35,7 +35,6 @@ const AddressTab = ({ active = '' }) => {
       setPostalInput2(e.target.value)
     if (e.target.value.length === 3)
       setPostalCode(postalCode +'-'+ e.target.value)
-    console.log(postalCode);
   }
   const handleStreetChange = (e) => setStreet(e.target.value);
   const handleCityChange = (e) => setCity(e.target.value);
