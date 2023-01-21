@@ -27,10 +27,15 @@ const AddressTab = ({ active = '' }) => {
   const handlePostalInput1 = (e) => {
     if (e.target.value.length <= 2)
       setPostalInput1(e.target.value)
+    if (e.target.value.length === 2)
+      setPostalCode(e.target.value +'-'+ postalCode)
   }
   const handlePostalInput2 = (e) => {
     if (e.target.value.length <= 3)
       setPostalInput2(e.target.value)
+    if (e.target.value.length === 3)
+      setPostalCode(postalCode +'-'+ e.target.value)
+    console.log(postalCode);
   }
   const handleStreetChange = (e) => setStreet(e.target.value);
   const handleCityChange = (e) => setCity(e.target.value);
