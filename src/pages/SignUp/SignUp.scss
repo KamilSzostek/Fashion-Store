@@ -150,10 +150,10 @@
           text-decoration: overline;
         }
 
-        .postal{
-          display: none;
-          padding-bottom: .2em;
-        }
+        // .postal{
+        //   display: none;
+        //   padding-bottom: .2em;
+        // }
 
         .postal-mobile{
           margin-left: 2em;
@@ -236,9 +236,9 @@
           .postal{
             display: block;
           }
-          .postal-mobile{
-            display: none;
-          }
+          // .postal-mobile{
+          //   display: none;
+          // }
         }
       }
     }
